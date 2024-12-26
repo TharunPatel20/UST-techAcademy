@@ -8,9 +8,9 @@ workflows using Git.
 
 ## Problem Statement 4: Tagging and Versioning
 
- Create tags to mark specific versions or releases of the project.
- Explore the difference between lightweight tags and annotated tags.
- Rollback to a previous tagged version to simulate version control in action.
+ ### Create tags to mark specific versions or releases of the project.
+ ### Explore the difference between lightweight tags and annotated tags.
+ ### Rollback to a previous tagged version to simulate version control in action.
 
 ## Learning Outcomes:
 
