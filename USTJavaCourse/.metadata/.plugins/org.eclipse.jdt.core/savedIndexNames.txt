@@ -1,4 +1,0 @@
-INDEX VERSION 1.134+C:\Users\Lenovo\OneDrive\Desktop\UST techAcademy\USTJavaCourse\.metadata\.plugins\org.eclipse.jdt.core
-1865797976.index
-3258189227.index
-3966480299.index
