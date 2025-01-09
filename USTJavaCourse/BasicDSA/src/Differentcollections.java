@@ -1,8 +1,12 @@
 import java.util.LinkedList;
 
 /**
- * 1. Create a Java Application to Work with different collections 
- * - Arrays, Linked List, Double Linked List and Circular Linked List.
+ * Create a Java Application to Work with different collections -
+ *  Arrays, 
+ *  Linked List, 
+ *  Double Linked List and 
+ *  Circular Linked List.
+ *  
  */
 
 
