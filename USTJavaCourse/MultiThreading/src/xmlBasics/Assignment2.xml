@@ -1,0 +1,21 @@
+<!-- Assignment 2: Document Structure
+2. Expand the XML document from Assignment 1 by introducing nested elements. 
+Add details such as publisher and a list of characters if applicable. -->
+
+
+<FavoriteBook>
+    <title>A Game of Thrones</title>
+    <author>George R.R. Martin</author>
+    <publication_year>1996</publication_year>
+    <genre>Fantasy</genre>
+    <publisher>Bantam Spectra</publisher>
+    <characters>
+        <character>Eddard Stark</character>
+        <character>Daenerys Targaryen</character>
+        <character>Jon Snow</character>
+        <character>Tyrion Lannister</character>
+        <character>Cersei Lannister</character>
+        <character>Robert Baratheon</character>
+    </characters>
+</FavoriteBook>
+
