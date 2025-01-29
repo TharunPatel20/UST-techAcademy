@@ -1,10 +1,10 @@
-package factoryPattern;
+package facadePattern;
 
 class Circle implements Shape{
 
 	private double radius; 
 	
-	Circle(double radius){	
+	Circle(double radius){
 		this.radius=radius;
 	}
 	
