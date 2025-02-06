@@ -18,6 +18,7 @@ public class Calculator {
             sum += value;
         }
         return sum;
+        
     }
 }
 
