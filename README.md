@@ -13,7 +13,7 @@
    - [Threads](https://docs.oracle.com/javase/tutorial/essential/concurrency/)  
 7. [Java Collection Framework](https://www.javatpoint.com/collections-in-java)  
 8. [Stream API](https://www.baeldung.com/java-8-streams)  
-9. [Data Structures and Algorithms](https://www.geeksforgeeks.org/data-structures/)  
+9. [Data Structures and Algorithms (DSA)](https://www.geeksforgeeks.org/data-structures/)  
 10. [JUnit (Unit Testing)](https://junit.org/junit5/docs/current/user-guide/)  
 11. [Mockito (Testing)](https://www.baeldung.com/mockito)  
 12. [TestNG (Testing)](https://testng.org/doc/)  
