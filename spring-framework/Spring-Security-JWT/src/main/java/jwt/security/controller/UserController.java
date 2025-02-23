@@ -1,35 +1,29 @@
 package jwt.security.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import jwt.security.mongoModel.User;
-import jwt.security.mongoRepository.UserRepository;
+import jwt.security.service.UserService;
+
 
 @RestController
+@RequestMapping("/user")
 public class UserController {
-	
-	
-	@Autowired
-	UserRepository userRepository;
-	
-	
-	@PostMapping("/register")
-	public User registerUser(@RequestBody User user) {
-		return userRepository.save(user);
-	}
-	
 
-	@PostMapping("/login")
-	public String verifyUser(@RequestBody User user) {
-		Object obj = userRepository.findByUsername(user.getUsername());
-		if(obj != null) {
-			return "success";
-		}
-		return "login failed";
-	}
+   
+    @Autowired
+    private UserService userService;
 
-	
+
+    @PostMapping("/register")
+    public String registerUser(@RequestBody User user) {
+    	return userService.register(user);
+        
+    }
+
+    @PostMapping("/login")
+    public String verifyUser(@RequestBody User user) {
+    	return userService.login(user);
+    }
 }
