@@ -10,7 +10,8 @@ import jwt.security.mongoRepository.UserRepository;
 @Service
 public class UserService {
 
-	private final BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+	@Autowired
+	private  BCryptPasswordEncoder passwordEncoder;
 
 	@Autowired
 	private UserRepository userRepository;
@@ -22,14 +23,14 @@ public class UserService {
 		else {
 			user.setPassword(passwordEncoder.encode(user.getPassword())); // Hash password
 			userRepository.save(user);
-			return "User registered successfully!";
+			return user.toString();
 		}
 	}
 
-	public String login(User user) {
+	public String verify(User user) {
 		User foundUser = userRepository.findByUsername(user.getUsername());
+		if(foundUser == null) return "user not found";
 		boolean found = passwordEncoder.matches(user.getPassword(), foundUser.getPassword());
 		return (foundUser != null) ? (found ? "login success!" : "wrong password!") : "user not found!";
 	}
-
 }

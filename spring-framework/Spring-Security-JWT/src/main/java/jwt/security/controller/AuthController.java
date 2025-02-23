@@ -20,7 +20,7 @@ public class AuthController {
 	UserRepository userRepo;
 	
 	
-	@GetMapping("Users")
+	@GetMapping("users")
 	public List<User> getAllUsers() {
 		return userRepo.findAll();
 	}
