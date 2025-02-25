@@ -1,0 +1,23 @@
+h1 {
+  color: gold;
+}
+
+.deposit {
+  color: green;
+}
+.withdraw {
+  color: red;
+}
+select {
+  background-color: black;
+  color: white;
+}
+
+select:hover {
+  background-color: white;
+  color: black;
+}
+
+body {
+  background-color: grey;
+}

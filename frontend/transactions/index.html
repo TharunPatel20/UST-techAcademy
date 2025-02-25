@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>transaction details</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <h1>Transaction details</h1>
+    <span>select transactionType</span>
+    <select
+      id="transactionType"
+      name="transactionType"
+      onchange="getTransactions(transactionType.value)"
+    >
+      <option value="all">all</option>
+      <option value="deposit">deposit</option>
+      <option value="withdraw">withdraw</option>
+    </select>
+    <p>Transaction history</p>
+    <ul id="transactionList" class="transactions"></ul>
+  </body>
+</html>
